@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <script>
+            //Desafío 1 IMC solo es multiplicar y dividir
+            function IMC(peso,altura) {
+                return peso / altura * altura 
+            }
+            let imc = IMC(56, 1.57)
+            console.log(imc)
+            //Desafío 2 factorial para este debo de poner de que multiplique el número por el número - 1 
+            function factorial(numero) {
+                if (numero=== 0 || numero=== 1) {
+                    return 1
+                } else {
+                    return numero * factorial(numero-1)
+                }
+            }
+            let numero = 5
+            let resultadoFactorial = factorial(numero)
+            console.log(`El factorial de ${numero} es ${resultadoFactorial}`)
+            //Desafío 3  se agrega la variable de valordeldolar para poder cambiar fácilmente el valor igual se puede poner el valor en la función y cambiarlo en el escrito 
+            function CambiarReal(cantidad) {
+                let costoReal = 4.8;
+                let ValorReal = costoReal * cantidad
+                return ValorReal
+            }
+            let = ValorDolar = 19
+            let = ValorReales = CambiarReal(ValorDolar)
+            console.log(`${ValorDolar} dolares son ${ValorReales}`)
+            //Desafío 4 No olvidar meter o sacar los console, sino funciona en este caso van juntos 
+            function AreaYperimetro(base,altura) {
+                let area = base * altura
+                let perimetro = base * 2 + altura * 2 
+                console.log(`El área del rectangulo es ${area}`)
+                console.log(`El perímetro del rectangulo es ${perimetro}`)
+            }
+            let base = 15
+            let altura = 18
+            AreaYperimetro(base,altura)
+            //Desafío 5 
+            function AreaYperimetroCircular(radio) {
+                let diametro = radio * 2 
+                let pi = 3.14
+                let areaC = pi * radio * radio 
+                let perimetroC = pi * diametro 
+                console.log(`El área del circulo es ${areaC}`)
+                console.log(`El perímetro del rectangulo es ${perimetroC}`)
+            }
+            let radio = 6
+            AreaYperimetroCircular(radio)
+            //Desafío 6 Lo que hice es que hice una variable de multiplicador, si el multiplicador es 1 entonces haré un limite que es <=10 entonces suma 1 hasta el 10 
+            //ahora se hace la variable de resultado y se usa temple string para el console.log. y se asigna valor al número a multiplicar 
+            function multiplicador(multipliado) {
+                for (multiplicador =1;multiplicador <=10;multiplicador++) {
+                    let resultado = multiplicador * multipliado
+                    console.log(`El número ${multipliado} por ${multiplicador} es igual a ${resultado}`)
+                }
+                
+            }
+            let multipliado = 18
+            multiplicador(multipliado)
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

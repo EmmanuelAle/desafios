@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <script>
+        //Desafío 1 Crear una lista vacía 
+        let primeraLista = [];
+        //Desafpio 2 lista de lenguajes de programación 
+        let lenguajesDeProgramación = [`Java`, `C++`, `Kotlin`, `Python`]
+        //Desafío 3 agregar a la lista de programación 
+        lenguajesDeProgramación.push(`Java`,`Ruby`, `GoLang`)
+        //Desafío 4 crear función que muestre la lista en la consola.
+        function mostrarLenguajes(lenguajesDeProgramación) {
+            return lenguajesDeProgramación
+        }
+        laConsolaLenguajes = mostrarLenguajes()
+        console.log(lenguajesDeProgramación)
+        //Desafío 5 crear funcion que lo muestre al revés 
+        //for es cuando se pide al revés, entonces si la variables es igual al tamaño de la lista entonces significa que al revés es igual o menos a 0 
+        //por lo cual al reves se va a restar para colocarlo al revés 
+        function lenguajesDeProgramaciónAlReveés() {
+            for(let alReves = lenguajesDeProgramación.length-1; alReves >=0; alReves--)
+            console.log(lenguajesDeProgramación[alReves])
+        }
+        lenguajesDeProgramaciónAlReveés();
+        //Desaf+io 6 Promedio. lo unico que hice fue crear la variable de tamaño y dividirlo entre el tamaño de la lista
+        function promedioDeElementos() {
+            let tamaño = lenguajesDeProgramación.length
+            let resultado = tamaño / lenguajesDeProgramación.length
+            console.log(resultado)
+        }
+        promedioDeElementos();
+        //Desafío 7 Del más grande al más pequeño 
+        //Cuál será es 1 entonces si la lista es mayor a 1 se le suma a la variable, se crean dos if sobre uno mayor y uno menor y se anexa
+        //al console
+        function delMásGrandeAlMásPequeño(lenguajesDeProgramación) {
+        let mayor = lenguajesDeProgramación[0]
+        let menor = lenguajesDeProgramación[0]
+            for(let cualSerá = 1;cualSerá <= lenguajesDeProgramación.length;cualSerá++) {
+            if (lenguajesDeProgramación[cualSerá] > mayor) {
+                mayor = lenguajesDeProgramación[cualSerá]
+             } 
+            if(lenguajesDeProgramación[cualSerá] < menor) {
+             menor = lenguajesDeProgramación[cualSerá]
+             }
+            }
+            console.log(`${mayor},${menor}`)
+            console.log(`${menor},${mayor}`)
+        }
+        let numeros = [0,1,2,3,4,5,6,7];
+        delMásGrandeAlMásPequeño(numeros);
+        //Desafío 8 hace una funcion que retorne la suma de los números de la lista 
+        //Lo que hice fue crear una variable 0 y una variable s la cual es 0, si la lista es mayor a 0 entonces va a sumar 1 el 0 
+        // el 0 de la suma va a sumar a la lista, la variable s estará sumando los valores de los número a sumar 
+        function sumando(lenguajesDeProgramación) {
+            let suma = 0
+            for (let s = 0; s < lenguajesDeProgramación.length; s++) {
+                suma += lenguajesDeProgramación[s]
+            }
+            return suma;
+        }
+            
+        let numeroASumer = [0,1,2,3,4,5,6,7]
+        let suma = sumando(numeroASumer)
+        console.log('Suma:', suma)
+        //Desafío 9 Retorno 
+        function retornar(lenguajesDeProgramación,elemento) {
+            for(let r = 0;r < lenguajesDeProgramación;r++) {
+                if(lenguajesDeProgramación[r] === elemento) {
+                    return r 
+                }
+            }
+            return - 1 
+        }
+        //Desafío 10 una nuevalista con la suma de los otros números 
+        //Genera dos listas y juntalas en una funcition, lo que hice fue hacer como el modelo general para sumar que es 
+        //for(let variable = 1 o 0, variables < lista.length; variable++), después agregé a la nueva lista con push la suma de ambas sumas 
+        //Para al final generar nuevas variables en las cuales usar la función
+        function sumarListas(primeraEnLista,segundaEnLista) {
+            let resultado = []
+            for(let l = 0;l < primeraEnLista.length;l++) {
+                resultado.push(primeraEnLista[l]+ segundaEnLista[l])
+            }
+            return resultado;
+        }
+        let listaP = [15,12]
+        let ListaS = [16,10]
+        let resultadoSuma = sumarListas(listaP,ListaS)
+        console.log(`${resultadoSuma}`)
+        //Desafío 11 Devuelva la lista, pero con el cuadrado de cada número
+        // Cree la array sola de resultado, hice el tipico de suma, luego al cuadrado le sume la nueva lista donde se debe de 
+        // multiplicar la lista por ella misma, lo retorne y agregué la variable de la lista 
+        function cuadradoDeListas(primeraCuadrado) {
+            let cuadrado = []
+            for (let c = 0;c <primeraCuadrado.length;c++) {
+                cuadrado.push(primeraCuadrado[c] * primeraCuadrado[c])
+            }
+            return cuadrado;
+        }
+        let elPrimerCuadrado = [8,2,3]
+        let resultadoDeCuadrado = cuadradoDeListas(elPrimerCuadrado)
+        console.log(`${resultadoDeCuadrado}`)
+        </script>
+    </head>
+    <body>
+
+    <p>Esto es una prueba del color</p>
+        <p style="Esto es una prueba de color"></p>
+    </body>
+</html>
